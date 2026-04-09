@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Exclusivo | Sofia Queiroz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #ff8c5f 0%, #ff6b3d 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .profile-wrapper {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            padding: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+        }
+
+        .badge-verified {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 35px;
+            height: 35px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .badge-verified svg {
+            width: 20px;
+            height: 20px;
+            fill: #ff6b3d;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .username {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background: #fff;
+            color: #ff6b3d;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 18px;
+            text-transform: uppercase;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .cta-button:active {
+            transform: scale(0.95);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-text {
+            margin-top: 40px;
+            font-size: 12px;
+            opacity: 0.7;
+            line-height: 1.5;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); }
+            50% { transform: scale(1.03); box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2); }
+            100% { transform: scale(1); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); }
+        }
+
+        /* Micro-interactions for Meta Ads Compliance */
+        .legal-links {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .legal-links a {
+            color: #fff;
+            text-decoration: underline;
+            font-size: 11px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-wrapper">
+            <img src="images/perfil1.png" alt="Sofia Queiroz" class="profile-img">
+            <div class="badge-verified">
+                <svg viewBox="0 0 24 24"><path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z"></path></svg>
+            </div>
+        </div>
+
+        <h1>Sofia Queiroz</h1>
+        <p class="username">@sofiaqueiroz</p>
+
+        <a href="https://privacy-oficial-6xo1.vercel.app/" class="cta-button" rel="noopener noreferrer">
+            ACESSAR PRIVACY
+        </a>
+
+        <p class="footer-text">
+            Este site não faz parte do site do Facebook ou do Facebook Inc. Além disso, este site NÃO é endossado pelo Facebook de nenhuma maneira. FACEBOOK é uma marca comercial da FACEBOOK, Inc.
+        </p>
+
+        <div class="legal-links">
+            <a href="#">Termos de Uso</a>
+            <a href="#">Políticas de Privacidade</a>
+        </div>
+    </div>
+</body>
+</html>
